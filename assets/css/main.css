@@ -1,0 +1,759 @@
+/* BASE
+--------------------------------------------------------- */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #FFFFFB;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 1.24;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+ol {
+  padding: 0;
+  padding-left: 1.25em;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  margin-bottom: 2em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+section.centered {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.comment {
+  display: none;
+}
+
+.clearer {
+  clear: both;
+}
+
+
+/* OVERALL CONTAINERS AND COLUMNS
+--------------------------------------------------------- */
+
+.container {
+  margin: 28px;
+}
+
+.container a,
+footer a {
+  background: url('../images/moving-underline.gif') repeat-x;
+  background-position: 0 100%;
+  transition: .1s background ease-out;
+  -webkit-transition: .1s background ease-out;
+  -moz-transition: .1s background ease-out;
+  -o-transition: .1s background ease-out;
+}
+
+.container a:hover,
+footer a:hover {
+  background: #FDEE2F url('../images/moving-underline.gif') repeat-x;
+  background-position: 0 100%;
+}
+
+.columns {
+  margin-top: 1em;
+}
+
+.column {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.columns-1 .column {
+  width: 100%;
+}
+
+.columns-2 .column {
+  width: 50%;
+}
+
+.columns-3 .column {
+  width: 33.33%;
+}
+
+.columns-4 .column {
+  width: 25%;
+}
+
+.columns-5 .column {
+  width: 20%;
+}
+
+.column p:first-child {
+  margin-top: 0;
+}
+
+/* TYPOGRAPHY
+--------------------------------------------------------- */
+
+.regular,
+.caption, figcaption,
+.text .notes,
+.text blockquote,
+.document,
+#footnotes {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.large,
+.text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+code,
+nav,
+.library,
+.metadata,
+ul.calendar .title,
+footer .source,
+#meta-bar,
+.project-code,
+.projects-start-end,
+.document h2.code-heading {
+  font-family: "Inconsolata", "Courier New", Courier, monospace;
+  font-size: 17px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* NAVIGATION
+--------------------------------------------------------- */
+
+nav {
+  text-align: center;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 12px;
+  padding: 22px 3px;
+}
+
+nav li {
+  background: url('../images/bullet-none.png') no-repeat;
+  background-size: 6px 6px;
+  background-position:center 24%;
+  transition: .1s background ease-out;
+  -webkit-transition: .1s background ease-out;
+  -moz-transition: .1s background ease-out;
+  -o-transition: .1s background ease-out;
+}
+
+nav li:hover {
+  background: url('../images/bullet-empty.svg') no-repeat;
+  background-size: 6px 6px;
+  background-position:center 24%;
+}
+
+nav li.current,
+nav li.current:hover {
+  background: url('../images/bullet.svg') no-repeat;
+  background-size: 6px 6px;
+  background-position:center 24%;
+  cursor: pointer;
+}
+
+nav .home-link {
+  position: absolute;
+  left: 16px;
+  top: 20px;
+  height: 12px;
+  width: 12px;
+  background: url('../images/home.svg') no-repeat;
+  background-size: 12px 12px;
+}
+
+nav .info-link {
+  position: absolute;
+  right: 16px;
+  top: 20px;
+  height: 12px;
+  width: 12px;
+  background: url('../images/info.svg') no-repeat;
+  background-size: 12px 12px;
+}
+
+/*nav#subnav {
+  text-align: left;
+  border: 0;
+  display: block;
+  position: absolute;
+  padding: 28px 16px;
+  height: auto;
+}
+
+nav#subnav.fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav#subnav li {
+  display: block;
+  list-style-type: none;
+  margin-right: 0;
+  padding: 0;
+  text-indent: 16px;
+  background-position:left 50%;
+}
+
+nav#subnav li:hover {
+  background-position:left 50%;
+}
+
+nav#subnav li.current,
+nav#subnav li.current:hover {
+  background: url('../images/bullet.svg') no-repeat;
+}
+
+nav#subnav li.top {
+  display: none;
+  font-size: 20px;
+  margin-top: -4px;
+}
+
+nav#subnav li.top:hover {
+  background: none;
+}*/
+
+
+/* HOME
+--------------------------------------------------------- */
+
+#greeting {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+#town {
+  background: url('../images/town-outline.svg') no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* TEXTS DIRECTORY
+--------------------------------------------------------- */
+
+.library-row {
+  width: 100%;
+  border-top: 1px solid #000;
+  padding: 16px 0 16px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+    
+a.library-item {
+  color: #000;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  text-indent: 16px;
+  padding: 16px 0 16px;
+  margin: -16px 0 -16px;
+  transition: .1s background ease-out;
+  -webkit-transition: .1s background ease-out;
+  -moz-transition: .1s background ease-out;
+  -o-transition: .1s background ease-out;
+}
+
+.library-row .class-item h2 {
+  text-transform: uppercase;
+}
+    
+a.library-item:hover,
+a.top-link:hover {
+  background: #FDEE2F;
+  cursor: pointer;/*
+  -webkit-animation: pulse 1.2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;*/
+}
+
+.library-item h2 {
+  display: inline;
+}
+
+.library-item .year {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.library-row:first-child {
+  border-top: 0;
+}
+
+.library-row:last-child {
+  border-bottom: 1px solid #000;
+}
+
+.metadata p {
+  margin: 0;
+}
+
+.metadata .space {
+  width: 100%;
+  height: 1em;
+}
+
+.metadata {
+  margin-bottom: 56px;
+}
+
+sup.footnote {
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+#footnotes {
+  margin-top: 56px;
+  max-width: 640px;
+}
+
+#footnotes li {
+  margin-bottom: 1em;
+}
+
+.footnotereverse a,
+.footnotereverse a:hover {
+  background: none;
+}
+
+/* INDIVIDUAL TEXT
+--------------------------------------------------------- */
+
+a.top-link {
+  display: block;
+  position: relative;
+  height: 52px;
+  border-bottom: 1px solid black;
+  transition: .1s background ease-out;
+  -webkit-transition: .1s background ease-out;
+  -moz-transition: .1s background ease-out;
+  -o-transition: .1s background ease-out;
+}
+
+figure.right {
+  float: right;
+}
+
+figure.left {
+  float: left;
+}
+
+.text h1,
+.text h2,
+.text h3,
+.text h4,
+.text h5,
+.text h6 {
+  font-weight: bold;
+}
+
+.text .notes,
+.text blockquote {
+  max-width: 640px;
+}
+
+.metadata h1 {
+  margin: 0;
+}
+
+.metadata .selected-image {
+  max-width: 175px;
+  margin-bottom: 1em;
+}
+
+
+/* INDIVIDUAL DOCUMENT
+--------------------------------------------------------- */
+
+.document {
+  max-width: 640px;
+  margin: 0 auto 28px;
+}
+
+.document h2,
+.document h3,
+.document h4,
+.document h5,
+.document h6 {
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+.document h2.code-heading {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 16px 0;
+  font-weight: normal;
+}
+
+.document h2.code-heading:first-child {
+  margin-top: 0;
+}
+
+.document ul li {
+  list-style-type: circle;
+  list-style: inside;
+}
+
+.document .metadata {
+  margin-top: 56px;
+}
+
+#meta-bar {
+}
+
+#meta-bar .inside {
+  padding: 17px 0;
+  width: 100%;
+  text-align: center;
+  background: #FFFFFB;
+}
+
+#meta-bar hr {
+  margin: 112px 0 0;
+  opacity: 0;
+}
+
+#meta-bar.bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#meta-bar .back-to-top {
+  display: none;
+  padding: 17px;
+  position: absolute;
+}
+
+.document h2:first-child {
+  margin-top: 0;
+}
+
+.document hr {
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 84px 0;
+}
+
+
+/* PROJECTS
+--------------------------------------------------------- */
+
+.document ul.projects {
+  margin: 0;
+}
+
+.document ul.projects li {
+  list-style-type: none;
+}
+
+.document-side {
+  position: absolute;
+}
+
+
+/* CALENDAR
+--------------------------------------------------------- */
+
+ul.calendar {
+  border-top: 1px solid #000;
+}
+
+ul.calendar li.calendar-row {
+  border-bottom: 1px solid #000;
+}
+
+.document ul.calendar li.calendar-row {
+  list-style-type: none;
+}
+
+ul.calendar .title {
+  text-indent: 0;
+  height: 52px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: .1s background ease-out;
+  -webkit-transition: .1s background ease-out;
+  -moz-transition: .1s background ease-out;
+  -o-transition: .1s background ease-out;
+}
+
+ul.calendar .title:hover {
+  background: #FDEE2F;
+}
+
+ul.calendar .body {
+  border-top: 1px dashed #000;
+  display: none;
+  margin-bottom: 52px;
+  padding-top: 40px;
+}
+
+.projects-start-end {
+  position: absolute;
+  width: 200px;
+  right: -200px;
+  top: 16px;
+}
+
+.current-week {
+  position: absolute;
+  width: 80px;
+  height: 54px;
+  left: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+figure.reading {
+  margin-bottom: -0.75em;
+}
+
+.reading img {
+  max-width: 175px;
+}
+
+ul.calendar figure {
+  margin: 1em 0;
+}
+
+
+/* FREEFORM
+--------------------------------------------------------- */
+
+footer {
+  margin: 28px;
+}
+
+footer .source {
+  display: none;
+  margin-top: 56px;
+}
+
+
+/* WORKSHOP and SPECIAL HOMEPAGE THINGS
+--------------------------------------------------------- */
+
+#naming-workshop {
+   width: 60px;
+   height: 82px;
+   position: fixed;
+   left: 33%;
+   bottom: 8%;
+   z-index: 7;
+   border: 1px solid #000;
+   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+   background: #FFF;
+   transition: .5s background ease-out;
+  -webkit-transition: .5s background ease-out;
+  -moz-transition: .5s background ease-out;
+  -o-transition: .5s background ease-out;
+}
+
+#naming-workshop:hover {
+  background: #fff;
+}
+
+#coding-from-life {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 80px;
+  right: 25px;
+  z-index: 7;
+  border: 1px solid #000;
+  background: #FFF;
+  transition: .5s background ease-out;
+  -webkit-transition: .5s background ease-out;
+  -moz-transition: .5s background ease-out;
+  -o-transition: .5s background ease-out;
+}
+
+#coding-from-life:before {
+  border-left: 1px solid black;
+  height: 80px;
+  left: 50%;
+  position:absolute;
+  content:'';
+}
+
+#coding-from-life:after {
+  border-top: 1px solid black;
+  width: 80px;
+  top: 50%;
+  position:absolute;
+  content:'';
+}
+
+#coding-from-life:hover {
+  background: #fff;
+}
+
+/* SHUFFLE
+--------------------------------------------------------- */
+
+a.shuffle,
+a.shuffle:hover {
+  background: none;
+}
+
+
+/* NEW SUMMER 2016
+--------------------------------------------------------- */
+
+/*@-webkit-keyframes sunGlow {
+  from { background-color: #FDEE2F; -webkit-box-shadow: 0 0 0 #FFF; }
+  50% { background-color: #FDEE2F; -webkit-box-shadow: 0 0 74px #FDEE2F; }
+  to { background-color: #FDEE2F; -webkit-box-shadow: 0 0 0 #FFF; }
+}
+
+.sun {
+  -webkit-animation-name: sunGlow;
+  -webkit-animation-duration: 500s;
+  -webkit-animation-iteration-count: infinite;
+}*/
+
+/* MEDIA QUERIES
+--------------------------------------------------------- */
+
+@media screen and (max-width: 1040px) {
+  .projects-start-end { display: none; }
+}
+
+@media screen and (max-width: 640px) {
+  .document-side { display: none; }
+}
+
+@media screen and (max-width: 640px) {
+  .current-week { display: none; }
+}
+
+@media screen and (max-width: 540px) {
+
+  nav {
+    display: block;
+    height: auto;
+    padding: 12px 0;
+  }
+
+  nav li {
+    display: block;
+    width: 100%;
+    padding: 4px 0;
+    background-position: 96% !important;
+  }
+
+  nav li:hover {
+    background-position: 96% !important;
+  }
+
+  nav li.current {
+    background: url('../images/bullet.svg') no-repeat;
+    background-size: 6px 6px;
+    background-position: 96% !important;
+    cursor: pointer;
+    margin-top: 2px;
+  }
+
+  nav .info-link,
+  nav .home-link {
+    position: static;
+    display: block;
+    margin: 8px auto;
+  }
+
+  .library-row .year {
+    display: none;
+  }
+
+  .large,
+  .text {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+
+  .calendar-row .days {
+    display: none;
+  }
+
+  ul.calendar {
+    margin-left: -14px;
+    margin-right: -14px;
+  }
+
+}

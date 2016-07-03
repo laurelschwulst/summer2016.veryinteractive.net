@@ -1,0 +1,35 @@
+a.top-link {
+	background: #BEC6C9;
+}
+
+#meta-bar .inside {
+	background: none;
+}
+
+#meta-bar hr {
+	border: 0;
+	border-top: 1px solid #000;
+	opacity: 0.1;
+}
+
+nav { display: none !important; }
+
+h1 { font-size: 28px; line-height: 32px; font-weight: bold; margin-bottom: 2em; }
+
+ul ul li {
+	list-style-type: circle !important;
+	padding-left: 1.5em;
+}
+
+ul ul {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+ul ul li {
+	margin: 0;
+}
+
+ul p {
+	margin-bottom: 0;
+}
