@@ -7,10 +7,10 @@ html, body {
 
 body {
   margin: 0;
-  background: #FFFFFB;
+  background: #fffbf0;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
-  line-height: 1.24;
+  line-height: 1.2;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -69,7 +69,7 @@ section.centered {
 --------------------------------------------------------- */
 
 .container {
-  margin: 28px;
+  margin: 40px 28px;
 }
 
 .container a,
@@ -132,7 +132,7 @@ footer a:hover {
 #footnotes {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .large,
@@ -151,10 +151,11 @@ footer .source,
 #meta-bar,
 .project-code,
 .projects-start-end,
-.document h2.code-heading {
+.document h2.code-heading,
+.menu.book li {
   font-family: "Inconsolata", "Courier New", Courier, monospace;
   font-size: 17px;
-  line-height: 1.25;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
 }
@@ -363,7 +364,7 @@ a.top-link:hover {
 
 sup.footnote {
   font-size: 20px;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 #footnotes {
@@ -392,6 +393,10 @@ a.top-link {
   -webkit-transition: .1s background ease-out;
   -moz-transition: .1s background ease-out;
   -o-transition: .1s background ease-out;
+}
+
+figure {
+  /*display: inline-block;*/
 }
 
 figure.right {
@@ -470,7 +475,7 @@ figure.left {
   padding: 17px 0;
   width: 100%;
   text-align: center;
-  background: #FFFFFB;
+  background: #fffbf0;
 }
 
 #meta-bar hr {
@@ -523,6 +528,8 @@ figure.left {
 
 ul.calendar {
   border-top: 1px solid #000;
+  margin-bottom: 112px;
+  margin-top: 52px;
 }
 
 ul.calendar li.calendar-row {
@@ -561,7 +568,7 @@ ul.calendar .body {
 .projects-start-end {
   position: absolute;
   width: 200px;
-  right: -200px;
+  right: -212px;
   top: 16px;
 }
 
@@ -668,6 +675,54 @@ a.shuffle:hover {
   background: none;
 }
 
+/* IFRAME
+--------------------------------------------------------- */
+
+iframe {
+  position: fixed;
+  top: 53px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+}
+
+/* BOOK
+--------------------------------------------------------- */
+
+.menu.book {
+  border-right: 1px solid black;
+  position: absolute;
+  left: 0;
+  top: 53px;
+  bottom: 0;
+  width: 26%;
+  overflow-x: hidden !important;
+  overflow-y: scroll;
+}
+
+.menu.book li a {
+  display: block;
+  padding: 17px;
+  border-bottom: 1px solid black;
+}
+
+.menu.book li a:hover,
+.menu.book li.current a {
+  background: white;
+}
+
+.container.book {
+  position: absolute;
+  left: 26%;
+  width: 74%;
+  top: 53px;
+  bottom: 0;
+  overflow-y: scroll;
+  margin: 0;
+  padding-top: 20px;
+}
+
 
 /* NEW SUMMER 2016
 --------------------------------------------------------- */
@@ -740,7 +795,7 @@ a.shuffle:hover {
   .large,
   .text {
     font-size: 20px;
-    line-height: 1.25;
+    line-height: 1.2;
   }
 
 }

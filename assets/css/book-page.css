@@ -1,0 +1,46 @@
+#meta-bar.bottom {
+	position: static;
+}
+
+#meta-bar .inside {
+	background: transparent;
+	width: 640px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+h1 { font-size: 34px; line-height: 32px; font-weight: bold; margin-bottom: 2em; }
+
+h2 { font-size: 28px; padding-bottom: 10px; border-bottom: 1px solid black; }
+
+ul ul li {
+	list-style-type: circle !important;
+	padding-left: 1.5em;
+}
+
+ul ul {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+ul ul li {
+	margin: 0;
+}
+
+.document ul li {
+	padding-left: 1em;
+    text-indent: -0.9em;
+}
+
+.gist {
+	margin: 2em 0;
+}
+
+.gist a,
+.gist a:hover {
+	background: none;
+}
+
+.gist-meta {
+	background-color: transparent;
+}
