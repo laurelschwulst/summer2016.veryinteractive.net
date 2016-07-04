@@ -44,3 +44,11 @@ ul ul li {
 .gist-meta {
 	background-color: transparent;
 }
+
+.blob-wrapper.data.type-html {
+	padding: 17px;
+}
+
+figure {
+	margin-bottom: 0;
+}

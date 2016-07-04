@@ -152,7 +152,8 @@ footer .source,
 .project-code,
 .projects-start-end,
 .document h2.code-heading,
-.menu.book li {
+.menu.book li,
+pre {
   font-family: "Inconsolata", "Courier New", Courier, monospace;
   font-size: 17px;
   line-height: 1.2;
@@ -709,7 +710,7 @@ iframe {
 
 .menu.book li a:hover,
 .menu.book li.current a {
-  background: white;
+  background: #FFF;
 }
 
 .container.book {
@@ -727,6 +728,25 @@ iframe {
 /* NEW SUMMER 2016
 --------------------------------------------------------- */
 
+pre {
+  padding: 17px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+/*figure.frame {
+  width: 100%;
+  text-align: center;
+  background: #000;
+  padding: 42px;
+  box-sizing: border-box;
+}
+
+figure.frame img {
+  display: inline-block;
+}
+*/
 /*@-webkit-keyframes sunGlow {
   from { background-color: #FDEE2F; -webkit-box-shadow: 0 0 0 #FFF; }
   50% { background-color: #FDEE2F; -webkit-box-shadow: 0 0 74px #FDEE2F; }
