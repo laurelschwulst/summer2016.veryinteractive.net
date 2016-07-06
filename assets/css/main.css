@@ -9,7 +9,7 @@ body {
   margin: 0;
   background: #fffbf0;
   font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.2;
 }
 
@@ -131,7 +131,7 @@ footer a:hover {
 .document,
 #footnotes {
   font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.2;
 }
 
@@ -263,7 +263,7 @@ nav#subnav li.current:hover {
 
 nav#subnav li.top {
   display: none;
-  font-size: 20px;
+  font-size: 19px;
   margin-top: -4px;
 }
 
@@ -364,7 +364,7 @@ a.top-link:hover {
 }
 
 sup.footnote {
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.2;
 }
 
@@ -814,7 +814,7 @@ figure.frame img {
 
   .large,
   .text {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.2;
   }
 
