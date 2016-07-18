@@ -6,3 +6,38 @@ h1 { font-size: 28px; line-height: 32px; font-weight: bold; }
 	padding-left: 1em;
     text-indent: -0.9em;
 }
+
+ul ul li {
+	list-style-type: circle !important;
+	padding-left: 1.5em;
+}
+
+ul ul {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+ul ul li {
+	margin: 0;
+}
+
+.gist {
+	margin: 2em 0;
+}
+
+.gist a,
+.gist a:hover {
+	background: none;
+}
+
+.gist-meta {
+	background-color: transparent;
+}
+
+.blob-wrapper.data.type-html {
+	padding: 17px;
+}
+
+figure {
+	margin-bottom: 2em;
+}
